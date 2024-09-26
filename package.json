@@ -1,0 +1,29 @@
+{
+  "name": "pamela",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp ./src/views ./build/views && cp ./src/public ./build/public",
+    "start": "node build/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.1",
+    "@types/pug": "^2.0.10",
+    "prisma": "^5.20.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@fastify/static": "^8.0.1",
+    "@fastify/view": "^10.0.1",
+    "@prisma/client": "^5.20.0",
+    "fastify": "^5.0.0",
+    "pug": "^3.0.3",
+    "sqlite3": "^5.1.7"
+  }
+}

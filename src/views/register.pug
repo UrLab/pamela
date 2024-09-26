@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title PAMELA
+        link(rel="stylesheet", href="/style.css")
+    body 
+        header 
+            h1 PAMELA
+
+        form(action="/register", method="POST")
+            label(for="name") Nom
+            input(type="text", name="name", id="name")
+            label(for="mac") Adresse Mac
+            input(type="text", name="mac", id="mac")
+            button(type="submit") Enregistrer
+
+        script(src="/register.js") 

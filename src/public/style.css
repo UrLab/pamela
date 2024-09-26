@@ -1,0 +1,27 @@
+:root {
+    --background-color: #353539;
+    --text-color: #fff;
+}
+
+* {
+    padding: 5px;
+    margin: 0;
+    outline: none !important;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li::before {
+    content: "•";
+    color: rgb(24, 238, 24);
+    display: inline-block;
+    width: 1em;
+}
